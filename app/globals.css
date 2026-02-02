@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base - Light Mode */
+  --color-bg: 248 249 250;
+  --color-fg: 26 44 36;
+  --color-fg-muted: 87 100 90;
+
+  /* Palette */
+  --color-primary: 45 64 54;
+  /* Dark Green */
+  --color-secondary: 242 185 34;
+  /* Yellow */
+  --color-dark: 26 44 36;
+
+  /* Surfaces */
+  --color-surface: 255 255 255;
+  --color-surface-muted: 240 242 240;
+
+  /* Shadows */
+  --shadow-soft: 0 4px 24px -4px rgba(45, 64, 54, 0.08);
+  --shadow-medium: 0 8px 32px -8px rgba(45, 64, 54, 0.12);
+}
+
+html.dark {
+  /* Base - Dark Mode */
+  --color-bg: 26 44 36;
+  /* Dark Green Background */
+  --color-fg: 248 249 250;
+  /* White Text */
+  --color-fg-muted: 180 190 185;
+
+  /* Palette - Adjust for Dark Mode if needed */
+  --color-primary: 255 255 255;
+  /* In dark mode, primary headings are white */
+  --color-secondary: 242 185 34;
+  /* Yellow stays same */
+
+  --color-surface: 35 55 45;
+  /* Slightly lighter green for cards */
+  --color-surface-muted: 45 65 55;
+
+  --shadow-soft: 0 4px 24px -4px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 8px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-fg));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
