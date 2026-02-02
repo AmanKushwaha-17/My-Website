@@ -295,7 +295,7 @@ export default function CryptoBotPage() {
                     <h2 className="text-3xl font-bold text-primary dark:text-white mb-6">Project Goal</h2>
                     <div className="rounded-2xl border border-primary/20 dark:border-white/10 bg-primary/5 dark:bg-white/5 p-8">
                         <p className="text-fg-muted dark:text-white/80 leading-relaxed mb-4">
-                            This is <strong>not</strong> a "plug-and-play trading bot."
+                            This is <strong>not</strong> a &ldquo;plug-and-play trading bot.&rdquo;
                         </p>
                         <p className="text-fg-muted dark:text-white/80 leading-relaxed mb-4">
                             It is a <strong>research → forward-testing → system-design project</strong> focused on:

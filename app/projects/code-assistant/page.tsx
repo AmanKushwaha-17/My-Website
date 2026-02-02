@@ -210,7 +210,7 @@ export default function CodeAssistantPage() {
                             ].map((question, i) => (
                                 <li key={i} className="flex items-start gap-3 text-fg-muted dark:text-white/80">
                                     <span className="text-secondary font-bold">•</span>
-                                    <span className="italic">"{question}"</span>
+                                    <span className="italic">&ldquo;{question}&rdquo;</span>
                                 </li>
                             ))}
                         </ul>

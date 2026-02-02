@@ -82,6 +82,7 @@ export function Hero() {
             <div className="relative h-[450px] w-[450px] overflow-hidden rounded-full border-4 border-surface shadow-2xl ring-4 ring-primary/20 xs:h-[500px] xs:w-[500px] bg-surface-muted">
               <Image
                 src="/logo.png"
+                alt="Aman Kushwaha - AI Systems Developer"
                 fill
                 priority
                 className="object-cover"
